@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, watch } from "vue";
+import { watch } from "vue";
 import VideoCustom from "../components/Views/VideoDetailPage/VideoCustom.vue";
 import VideoInfor from "../components/Views/VideoDetailPage/VideoInfor.vue";
 import VideoComment from "../components/Views/VideoDetailPage/VideoComment.vue";

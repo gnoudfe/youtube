@@ -8,7 +8,6 @@ import LoadingComment from "../../Loading/LoadingComment.vue";
 const route = useRoute();
 const videoId = ref("");
 videoId.value = route.query.v;
-console.log(videoId.value)
 const {
   state,
   actionGetDetailReplyComments,
