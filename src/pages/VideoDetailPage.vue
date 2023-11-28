@@ -1,11 +1,11 @@
 <script setup>
 import { watch } from "vue";
-import VideoCustom from "../components/Views/VideoDetailPage/VideoCustom.vue";
-import VideoInfor from "../components/Views/VideoDetailPage/VideoInfor.vue";
-import VideoComment from "../components/Views/VideoDetailPage/VideoComment.vue";
-import VideoRelated from "../components/Views/VideoDetailPage/VideoRelated.vue";
-import VideoChapters from "../components/Views/VideoDetailPage/VideoChapters.vue";
-import VideoPlaylist from "../components/Views/VideoDetailPage/VideoPlaylist.vue";
+import VideoCustom from "../components/views/VideoDetailPage/VideoCustom.vue";
+import VideoInfor from "../components/views/VideoDetailPage/VideoInfor.vue";
+import VideoComment from "../components/views/VideoDetailPage/VideoComment.vue";
+import VideoRelated from "../components/views/VideoDetailPage/VideoRelated.vue";
+import VideoChapters from "../components/views/VideoDetailPage/VideoChapters.vue";
+import VideoPlaylist from "../components/views/VideoDetailPage/VideoPlaylist.vue";
 import { useRoute } from "vue-router";
 import { useSettingsStore } from "../stores/useSettings";
 import { useDetailVideoStore } from "../stores/useDetailVideo";

@@ -1,6 +1,6 @@
 <script setup>
 import { watch, onMounted, onBeforeUnmount, ref } from "vue";
-import ChannelContent from "../components/Views/AuthorDetailPage/ChannelContent.vue";
+import ChannelContent from "../components/views/AuthorDetailPage/ChannelContent.vue";
 import { useAuthorStore } from "../stores/useAuthor";
 import { useSettingsStore } from "../stores/useSettings";
 import { scrollToTop } from "../composables/scrollToTop";
