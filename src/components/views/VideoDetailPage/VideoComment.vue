@@ -3,24 +3,26 @@ import { ref, onMounted, onBeforeUnmount, watch } from "vue";
 import { useDetailVideoStore } from "../../../stores/useDetailVideo";
 import { convertRelativeTimeToVietnamese } from "../../../composables/formatDate";
 import { useRoute } from "vue-router";
+import LoadingComment from "../../Loading/LoadingComment.vue";
+
 const route = useRoute();
 const videoId = ref("");
 videoId.value = route.query.v;
-watch(
-  () => route.query.v,
-  (newVideoId) => {
-    videoId.value = newVideoId;
-  }
-);
+console.log(videoId.value)
 const {
   state,
   actionGetDetailReplyComments,
   actionGetNextComment,
   actionGetMoreComments,
 } = useDetailVideoStore();
-import LoadingComment from "../../Loading/LoadingComment.vue";
-const isSortComment = ref(false);
+watch(
+  () => route.query.v,
+  (newVideoId) => {
+    videoId.value = newVideoId;
+  }
+);
 
+const isSortComment = ref(false);
 const isLoading = ref(false);
 const handleSortComment = () => {
   isSortComment.value = !isSortComment.value;

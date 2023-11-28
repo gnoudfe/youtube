@@ -23,7 +23,7 @@ const data = computed(() => {
           <img
             :src="item.thumbnail"
             alt="thumbnail img"
-            class="rounded-xl object-cover w-full h-full bg-[#313131]"
+            class="rounded-xl object-cover w-full h-full bg-[#313131] min-h-[100px] text-transparent"
           />
           <div
             v-if="item.type === 'playlist'"

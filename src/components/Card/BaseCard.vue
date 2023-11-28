@@ -32,7 +32,7 @@ const HideToolKitAuthor = () => {
             <img
               :src="video.thumbnail"
               alt="thumbnail video"
-              class="rounded-2xl min-h-[180px] w-full h-full bg-[#313131]"
+              class="rounded-2xl min-h-[190px] w-full h-full bg-[#313131]"
             />
             <div
               class="bg-[#00000C] inline-block absolute bottom-2 right-1 px-[5px] rounded-md"

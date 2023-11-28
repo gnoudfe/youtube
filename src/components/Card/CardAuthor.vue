@@ -21,7 +21,7 @@ const { SettingsState } = useSettingsStore();
             <img
               :src="item.thumbnail"
               alt="thumbnail video"
-              class="rounded-2xl w-full bg-[#313131] min-h-[161px] "
+              class="rounded-2xl w-full bg-[#313131] min-h-[190px] "
             />
             <div
               class="bg-[#00000C] inline-block absolute bottom-2 right-1 px-[5px] rounded-md"

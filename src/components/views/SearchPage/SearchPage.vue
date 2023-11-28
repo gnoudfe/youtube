@@ -17,18 +17,6 @@ SettingsState.isLoading = true;
 await actionGetDetailSearchVideo(route.currentRoute.value.query.q);
 SettingsState.isLoading = false;
 
-// watch(
-//   () => route.currentRoute.value.params.id,
-//   async (newId, oldId) => {
-//     if (newId !== oldId) {
-//       state.initAuthor = true;
-//       SettingsState.isLoading = true;
-//       await actionGetAuthorInfor(newId);
-//       SettingsState.isLoading = false;
-//       scrollToTop();
-//     }
-//   }
-// );
 
 const isLoading = ref(false);
 

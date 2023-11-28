@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../pages/HomePage.vue";
-import AboutPage from "../pages/AboutPage.vue";
 import DefaultLayout from "../layouts/DefaultLayout.vue";
 import VideoDetailLayout from "../layouts/VideoDetailLayout.vue";
 import VideoDetailPage from "../pages/VideoDetailPage.vue";
@@ -15,14 +14,7 @@ const routers = [
       layout: DefaultLayout,
     },
   },
-  {
-    path: "/about",
-    component: AboutPage,
-    name: "Aboutpage",
-    meta: {
-      layout: VideoDetailLayout,
-    },
-  },
+
   {
     path: "/:id",
     name: "videodetails",

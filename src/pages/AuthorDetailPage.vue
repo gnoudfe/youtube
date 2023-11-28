@@ -1,14 +1,13 @@
 <script setup>
 import { watch, onMounted, onBeforeUnmount, ref } from "vue";
-import LoadingComment from "../components/Loading/LoadingComment.vue";
 import ChannelContent from "../components/views/AuthorDetailPage/ChannelContent.vue";
 import { useAuthorStore } from "../stores/useAuthor";
 import { useSettingsStore } from "../stores/useSettings";
 import { scrollToTop } from "../composables/scrollToTop";
-const { SettingsState } = useSettingsStore();
-
-const { state, actionGetAuthorInfor, actionGetMoreVideos } = useAuthorStore();
 import { useRouter } from "vue-router";
+
+const { SettingsState } = useSettingsStore();
+const { state, actionGetAuthorInfor, actionGetMoreVideos } = useAuthorStore();
 const route = useRouter();
 const isLoading = ref(false);
 SettingsState.isLoading = true;
