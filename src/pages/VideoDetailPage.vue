@@ -1,6 +1,6 @@
 <script setup>
 import { watch } from "vue";
-import VideoCustom from "../components/Views/VideoDetailPage/VideoCustom.vue";
+import VideoCustom from "../components/views/VideoDetailPage/VideoCustom.vue";
 import VideoInfor from "../components/Views/VideoDetailPage/VideoInfor.vue";
 import VideoComment from "../components/Views/VideoDetailPage/VideoComment.vue";
 import VideoRelated from "../components/Views/VideoDetailPage/VideoRelated.vue";
